@@ -19,7 +19,7 @@
     
     UIView * oneView = [[UIView alloc]init];
     oneView.frame = CGRectMake(100, 100, 100, 100);
-    oneView.backgroundColor = [UIColor lightGrayColor];
+    oneView.backgroundColor = [UIColor redColor];
     [self.view addSubview:oneView];
     
 }

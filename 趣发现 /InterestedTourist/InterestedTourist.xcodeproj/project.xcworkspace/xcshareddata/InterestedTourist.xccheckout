@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6A33E39-F66D-4B59-853C-FD496921EE0C</string>
+	<key>IDESourceControlProjectName</key>
+	<string>InterestedTourist</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0134D7FE61ED2138FD43ACCA17138E8EC8BDA4D3</key>
+		<string>https://github.com/CollinChen/Chen0324.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>趣发现 /InterestedTourist/InterestedTourist.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0134D7FE61ED2138FD43ACCA17138E8EC8BDA4D3</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/CollinChen/Chen0324.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0134D7FE61ED2138FD43ACCA17138E8EC8BDA4D3</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0134D7FE61ED2138FD43ACCA17138E8EC8BDA4D3</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Chen0324</string>
+		</dict>
+	</array>
+</dict>
+</plist>

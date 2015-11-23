@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MineViewController">
+            <connections>
+                <outlet property="ImgBack" destination="gd0-8T-Pyl" id="rjx-OE-OPO"/>
+                <outlet property="ImgUser" destination="XOo-62-Az6" id="3tC-5u-XJI"/>
+                <outlet property="tableView" destination="fzp-Qt-XGI" id="hJz-Qy-2tU"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1136-640.png" translatesAutoresizingMaskIntoConstraints="NO" id="gd0-8T-Pyl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="c5Y-wn-Rxf"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" translatesAutoresizingMaskIntoConstraints="NO" id="fzp-Qt-XGI">
+                    <rect key="frame" x="0.0" y="200" width="320" height="231"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="nyC-4a-WZ7"/>
+                        <outlet property="delegate" destination="-1" id="W8E-Fg-bU4"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我的" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4f-E5-7gZ">
+                    <rect key="frame" x="132" y="171" width="56" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Mpc-Fa-tAJ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="头像_03.png" translatesAutoresizingMaskIntoConstraints="NO" id="XOo-62-Az6">
+                    <rect key="frame" x="118" y="78" width="85" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="85" id="MRh-A7-Av6"/>
+                        <constraint firstAttribute="width" constant="85" id="bXg-Oa-Fe4"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="gd0-8T-Pyl" secondAttribute="trailing" id="3c0-DU-2uW"/>
+                <constraint firstAttribute="trailing" secondItem="fzp-Qt-XGI" secondAttribute="trailing" id="ICh-ao-p5w"/>
+                <constraint firstItem="gd0-8T-Pyl" firstAttribute="centerX" secondItem="XOo-62-Az6" secondAttribute="centerX" constant="-0.5" id="SRB-bP-734"/>
+                <constraint firstItem="fzp-Qt-XGI" firstAttribute="top" secondItem="R4f-E5-7gZ" secondAttribute="bottom" constant="8" id="bsm-qy-aKq"/>
+                <constraint firstAttribute="bottom" secondItem="fzp-Qt-XGI" secondAttribute="bottom" constant="49" id="cgP-Kr-DoW"/>
+                <constraint firstItem="R4f-E5-7gZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="132" id="cnj-J3-GB3"/>
+                <constraint firstItem="gd0-8T-Pyl" firstAttribute="centerY" secondItem="XOo-62-Az6" secondAttribute="centerY" constant="-20.5" id="eGN-jV-lMs"/>
+                <constraint firstItem="fzp-Qt-XGI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f44-EE-IYU"/>
+                <constraint firstAttribute="trailing" secondItem="R4f-E5-7gZ" secondAttribute="trailing" constant="132" id="frG-kB-FBD"/>
+                <constraint firstItem="gd0-8T-Pyl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ozj-tf-V23"/>
+                <constraint firstItem="fzp-Qt-XGI" firstAttribute="top" secondItem="gd0-8T-Pyl" secondAttribute="bottom" id="r7N-wt-RUi"/>
+                <constraint firstItem="gd0-8T-Pyl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vDn-Ci-9rf"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="247" y="382"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="1136-640.png" width="640" height="1137"/>
+        <image name="头像_03.png" width="85" height="85"/>
+    </resources>
+</document>

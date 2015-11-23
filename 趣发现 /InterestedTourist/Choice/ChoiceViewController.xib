@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChoiceViewController">
+            <connections>
+                <outlet property="searchDisplayController" destination="5AJ-GL-5Gb" id="Xd9-d0-LO3"/>
+                <outlet property="tv" destination="qW7-uG-Ryd" id="oMY-UJ-CCF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" placeholder="搜目的地" translatesAutoresizingMaskIntoConstraints="NO" id="Xic-W4-ex1">
+                    <rect key="frame" x="35" y="15" width="250" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="F99-aS-IFf"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qW7-uG-Ryd">
+                    <rect key="frame" x="0.0" y="64" width="320" height="367"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="yEG-t9-83a"/>
+                        <outlet property="delegate" destination="-1" id="K9f-je-fAM"/>
+                    </connections>
+                </tableView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1136-640.png" translatesAutoresizingMaskIntoConstraints="NO" id="03S-ne-AKZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <color key="backgroundColor" red="0.36716638137119484" green="0.97458865583767018" blue="0.8876906077941682" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="4mH-xh-6oD"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="趣发现-去发现不同地域的美" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNH-ub-cnK">
+                    <rect key="frame" x="8" y="31" width="251" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="8On-qM-G8b"/>
+                        <constraint firstAttribute="width" constant="251" id="tvA-pl-naD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="uNH-ub-cnK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="1di-2Y-1Nh"/>
+                <constraint firstItem="uNH-ub-cnK" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="31" id="EdM-tZ-H3L"/>
+                <constraint firstItem="03S-ne-AKZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JQh-IH-cVh"/>
+                <constraint firstAttribute="trailing" secondItem="Xic-W4-ex1" secondAttribute="trailing" constant="35" id="Te1-9v-1O3"/>
+                <constraint firstItem="Xic-W4-ex1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="U40-P2-5uj"/>
+                <constraint firstItem="qW7-uG-Ryd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g4e-nV-48o"/>
+                <constraint firstItem="03S-ne-AKZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jYF-Z5-mAs"/>
+                <constraint firstItem="Xic-W4-ex1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="m8L-tm-qsZ"/>
+                <constraint firstItem="qW7-uG-Ryd" firstAttribute="top" secondItem="03S-ne-AKZ" secondAttribute="bottom" id="pIB-jG-DrL"/>
+                <constraint firstAttribute="bottom" secondItem="qW7-uG-Ryd" secondAttribute="bottom" constant="49" id="poh-cK-RdM"/>
+                <constraint firstAttribute="trailing" secondItem="03S-ne-AKZ" secondAttribute="trailing" id="ruB-Tn-e0U"/>
+                <constraint firstAttribute="trailing" secondItem="qW7-uG-Ryd" secondAttribute="trailing" id="zfR-x2-hUQ"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="351" y="280"/>
+        </view>
+        <searchDisplayController id="5AJ-GL-5Gb">
+            <connections>
+                <outlet property="delegate" destination="-1" id="SFx-BK-WJC"/>
+                <outlet property="searchContentsController" destination="-1" id="cLo-kN-BMh"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="0dq-LQ-zyn"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="FA7-fp-tI2"/>
+            </connections>
+        </searchDisplayController>
+    </objects>
+    <resources>
+        <image name="1136-640.png" width="640" height="1137"/>
+    </resources>
+</document>
